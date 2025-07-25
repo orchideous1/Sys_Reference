@@ -51,6 +51,14 @@
 | USAD: UnSupervised Anomaly Detection on Multivariate Time Series | 介绍了一种名为USAD（UnSupervised Anomaly Detection）的方法，用于对多变量时间序列进行异常检测。传统的专家监督方法已经无法满足IT系统监测的需求，因此研究人员提出了这种快速稳定的方法。该方法基于自适应训练的自动编码器，并使用对抗性训练和其架构来隔离异常情况并提供快速训练。|
 | Wasm-bpf: Streamlining eBPF Deployment in Cloud Environments with WebAssembly | “Universal BPF（WASM-BPF）”的新方法，用于在云环境中简化eBPF程序的部署。传统的部署方法如独立容器或紧密集成的核心应用程序都存在不足之处，而WASM-BPF通过将eBPF程序打包为WebAssembly模块并整合到容器工具链中，实现了跨平台兼容性和动态插件管理。| 
 | XRP: In-Kernel Storage Functions with eBPF | 介绍了一种名为XRP的框架，它允许应用程序在NVMe驱动程序中的eBPF钩子中执行用户定义的存储函数，从而绕过Linux内核存储堆栈的大部分开销。通过将一小部分内核状态传播到其NVMe驱动程序钩子中，XRP保留了文件系统语义，并且能够显著提高吞吐量和延迟| 
+| Understanding,detecting and Localizing Partial Failures in Large System Software | 提出OmegaGen，这是一种静态分析工具，通过使用新颖的程序简化技术自动为给定程序生成定制的看门狗。已成功应用于六个大型分布式系统 |
+| X-ray: Automating Root-Cause Diagnosis of Performance Anomalies in Production
+Software | 它首先将性能成本归因于每个基本块。然后，它使用动态信息流跟踪来估计由于每个潜在根本原因而执行块的可能性。最后，它通过将每个区块的成本乘以所有基本区块的特定原因可能性相加来总结每个潜在根本原因的总体成本。还可以区别地执行绩效总结，以解释两项类似活动之间的绩效差异。|
+| Detecting failures in distributed systems with the FALCON spy network | 网络分层故障定位 |
+| Capturing and Enhancing In Situ System Observability for Failure Detection | 这是一个旨在通过利用系统组件之间的交互来增强系统的可观察性的系统。通过提供系统性渠道和分析工具，Panorama将组件转变为逻辑观察者，这样它不仅可以处理错误，还可以报告错误。 | 
+|Autotuning Configurations in Distributed Systems for Performance Improvements Using Evolutionary Strategies | 比较CMA算法的另一个现有的技术称为智能爬山（SHC），并证明CMA算法在合成数据和在一个真实的系统上优于SHC算法 |
+| Performance Improvement of Distributed Systems by Autotuning of the Configuration Parameters |  介绍了一种基于有序优化的策略，并结合反向传播神经网络来自动调整配置参数。该策略首次在自动化领域提出，用于复杂制造系统优化，并在这里进行了定制，以提高分布式系统性能。将该方法与协方差矩阵算法进行了比较。使用具有三层服务器的真实分布式系统进行的测试表明，该策略以合理的性能成本平均减少了40%的测试时间| 
+
 
 
 ---
@@ -60,6 +68,8 @@
 | 名称 | 说明 | 
 | ---- | ----- |
 | [ebpf note](./notes/ebpf_note.md) |  ebpf技术实现笔记      |  
+| [NFS故障案例by秘塔](./notes/NFS故障案例by秘塔.md) | NFS文件系统的故障案例分析 |
+| [故障诊断](./notes/故障诊断.md) | 故障诊断相关的笔记 |
 
 相关博客记录如下：
 | 链接 | 说明 |
